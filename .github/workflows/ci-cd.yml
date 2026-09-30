@@ -19,7 +19,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: sampleapplication.client
 
     steps:
       - name: Checkout code
@@ -53,10 +53,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore
-        run: dotnet restore ./backend
+        run: dotnet restore ./SampleApplication.slnx
 
       - name: Build
-        run: dotnet build ./backend --configuration Release --no-restore
+        run: dotnet build ./SampleApplication.slnx --configuration Release --no-restore
 
       - name: Test
-        run: dotnet test ./backend --configuration Release --no-build
+        run: dotnet test ./SampleApplication.slnx --configuration Release --no-build
