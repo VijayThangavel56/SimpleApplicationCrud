@@ -1,0 +1,47 @@
+.vs/
+.vscode/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.db
+app.db
+*.sqlite
+*.sqlite3
+*.log
+node_modules/
+.nuget/
+*.nupkg
+.vsconfig
+*.vsix
+.DS_Store
+.idea/
+*.iml
+
+# Rider
+.idea/
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains Rider
+.idea/
+
+# Build results
+bin/
+obj/
+
+# ASP.NET / EF
+wwwroot/uploads/
+
+# Local secrets
+secrets.json
+
+# Backup files
+*~
+*.backup
+
+# Copilot snapshot folder (avoid committing large IDE snapshots)
+.vs/CopilotSnapshots/
